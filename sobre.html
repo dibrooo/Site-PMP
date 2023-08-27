@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>PMP</title>
+		<link rel="stylesheet" href="estilos.css"/>
+	</head>
+	
+	<body>
+		<div id="barra"></div>
+		<div id="scroll"></div>
+
+		<div class="gradient-border" id="box">
+			<h1>Princípios Metodológicos da Programação</h1>
+		</div>
+		
+		<div id="geral">
+			<div id="topo">
+				<ul class="menu">
+					<a href="sobre.html" class="ativo">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Sobre
+					</a>
+					<a href="index.html">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Trabalhos
+					</a>
+					<a href="ufcd.html">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						A UFCD
+					</a>
+				</ul>
+			</div>
+			
+			<div class="container">
+				<!--Nós-->
+				<div class="left">
+					<div class="card">
+						<div class="imgBx">
+							<img src="pessoas.png" alt="Icon 2 pessoas">
+						</div>
+						<div class="contentBx">
+							<h2>Nós</h2>
+							<div class="info">
+								<h3>Trabalho realizado por:</h3>
+								<p>António Amaral e Simão Ferreira</p>
+								<h3>Ano e Turma:</h3>
+								<p>1ºB</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Escola-->
+				<div class="right">	
+					<div class="card">
+						<div class="imgBx">
+							<img src="escola.png" alt="Icon escola">
+						</div>
+						<div class="contentBx">
+							<h2>Escola</h2>
+							<div class="info">
+								<h3>Nome:</h3>
+								<p>EPROSEC</p>
+								<h3>Local:</h3>
+								<p>Arrifes</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--UFCD-->
+				<div class="center">
+					<div class="card">
+						<div class="imgBx">
+							<img src="ufcd.png" alt="Icon escola">
+						</div>
+						<div class="contentBx">
+							<h2>UFCD</h2>
+							<div class="info">
+								<h3>Código e nome:</h3>
+								<p>0806 - PMP</p>
+								<h3>Professor:</h3>
+								<p>Pedro Medeiros</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Script da barra lateral-->
+		<script type="text/javascript">
+			let progress = document.getElementById('barra');
+			let totalHeight = document.body.scrollHeight - window.innerHeight;
+			window.onscroll = function(){
+				let progressHeight = (window.pageYOffset / totalHeight) * 100;
+				progress.style.height = progressHeight + "%";
+			}
+		</script>
+	</body>
+</html>

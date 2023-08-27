@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<title>PMP</title>
+		<link rel="stylesheet" href="estilos.css"/>
+	</head>
+	
+	<body>
+		<div id="barra"></div>
+		<div id="scroll"></div>
+			
+		<div class="gradient-border" id="box">
+			<h1>Princípios Metodológicos da Programação</h1>
+		</div>
+		
+		<div id="geral">
+			<div id="topo">
+				<ul class="menu">
+					<a href="sobre.html">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Sobre
+					</a>
+					<a href="index.html">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						Trabalhos
+					</a>
+					<a href="ufcd.html" class="ativo">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						A UFCD
+					</a>
+				</ul>
+			</div>
+			<div id="content">
+				<!-- Parte I -->
+				<div class="ufcd">
+					<p>
+						<span class="bold">Designação:</span>
+						 Princípios metodológicos de programação
+					</p>
+					<p>
+						<span class="bold">Código:</span>
+						 806
+					</p>
+					<p>
+						<span class="bold">Duração:</span>
+						 25 horas
+					</p>
+				</div>
+
+				<!-- Parte II -->
+				<h2>Sobre</h2>
+				<div class="ufcd">
+					<p>
+						<span class="bold">Descrição:</span>
+						 A formação em Princípios metodológicos de programação permite o desenvolvimento de competências tendo em vista o reconhecimento das vantagens e desvantagens da utilização de uma metodologia.
+					</p>
+					<p>
+						<span class="bold">Destinatários/as:</span>
+						Destina-se a pessoas que pretendam adquirir competências associadas aos seguintes perfis profissionais, constantes no Catálogo Nacional de Qualificações:  Programador/a de Informática; e/ou técnicos da área profissional visada, que no âmbito da sua formação contínua pretendam aperfeiçoar conhecimentos.
+					</p>
+					<p>
+						<span class="bold">Objetivo/s:</span>
+						 Reconhecer as vantagens e desvantagens da utilização de uma metodologia.
+					</p>
+				</div>
+
+				<!-- Parte III -->
+				<h2>Conteúdos</h2>
+				<div class="ufcd">
+					<!--Metodologias em programação local-->
+					<ul>
+						<p>Metodologias em programação local</p>
+							<li>Evolução</li>
+							<li>Vantagens e desvantagens do seu uso</li>
+							<li>Tipos de metodologias</li>
+							<li>Desenho estruturado</li>
+							<li>Orientadas por objeto</li>
+							<li>Orientadas aos dados</li>
+					</ul>
+
+					<!--Princípios do método-->
+					<ul>
+						<p>Princípios do método</p>
+							<li>Teoria dos conjuntos aplicada aos dados</li>
+							<li>Representações gráficas dos conjuntos</li>
+							<li>Operações sobre conjuntos</li>
+							<li>Dados agrupados em conjuntos</li>
+							<li>Dados de entrada</li>
+							<li>Dados de saída</li>
+							<li>Frequência dos subconjuntos</li>
+					</ul>
+
+					<!--Estrutura de um programa-->
+					<ul>
+						<p>Estrutura de um programa</p>
+							<li>Regras de dedução para a identificação dos procedimentos</li>
+							<li>Sequência das instruções nos procedimentos</li>
+							<li>Condições o seu emprego no controlo das estruturas lógicas</li>
+					</ul>
+
+					<!--Corpo do programa-->
+					<ul>
+						<p>Corpo do programa</p>
+							<li>Desenvolvimento da sequência</li>
+							<li>Tratamento da estrutura de dados</li>
+							<li>Regras de gestão</li>
+					</ul>
+
+					<!--Desenho de formatos para entrada e saída dos dados em ecrã-->
+					<ul>
+						<p>Desenho de formatos para entrada e saída dos dados em ecrã</p>
+							<li>Normas de desenho</li>
+							<li>Interface homem/máquina</li>
+							<li>Desenho de entradas e saídas de dados em suporte papel</li>
+							<li>Execução do login</li>
+							<li>Uso de comandos</li>
+							<li>Uso do sistema gráfico de navegação por menus/li>
+							<li>Acesso a documentação Online</li>
+							<li>Programas e utilitários</li>
+					</ul>
+
+					<!--Dicionário de dados-->
+					<ul>
+						<p>Dicionário de dados</p>
+							<li>Definição de dicionário de dados</li>
+							<li>Dicionário de dados em programação</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--Script da barra lateral-->
+		<script type="text/javascript">
+			let progress = document.getElementById('barra');
+			let totalHeight = document.body.scrollHeight - window.innerHeight;
+			window.onscroll = function(){
+				let progressHeight = (window.pageYOffset / totalHeight) * 100;
+				progress.style.height = progressHeight + "%";
+			}
+		</script>
+	</body>
+</html>
